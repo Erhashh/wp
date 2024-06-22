@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page with CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="side-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box"></div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.querySelectorAll('.burger-menu');
+            const sideMenu = document.querySelector('.side-menu');
+
+            burgerMenu.forEach(menu => {
+                menu.addEventListener('click', () => {
+                    sideMenu.classList.toggle('open');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
