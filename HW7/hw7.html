@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA256 Hash Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <label for="inputText">Input Text:</label>
+    <input type="text" id="inputText" placeholder="Enter text to hash..." />
+    <p>SHA256 Hash:</p>
+    <p id="hashOutput"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
