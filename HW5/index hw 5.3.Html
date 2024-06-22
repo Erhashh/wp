@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Button Movement</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            position: absolute;
+            height: 50px;
+            width: 100px;
+            background-color: #ff5733;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #c70039;
+        }
+    </style>
+</head>
+<body>
+    <button id="randomButton">Click me</button>
+    <script>
+        function random() {
+            let wHeight = window.innerHeight;
+            let wWidth = window.innerWidth;
+
+            let rLeft = Math.random() * (wWidth - b.offsetWidth);
+            let rTop = Math.random() * (wHeight - b.offsetHeight);
+
+            b.style.left = `${rLeft}px`;
+            b.style.top = `${rTop}px`;
+        }
+
+        const b = document.getElementById('randomButton');
+        b.style.position = 'absolute';
+
+        b.addEventListener('click', random);
+    </script>
+</body>
+</html>

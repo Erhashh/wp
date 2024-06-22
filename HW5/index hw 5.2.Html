@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            position: absolute;
+            left: 100px;
+            height: 50px;
+            width: 100px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <button id="moveButton">Click me</button>
+    <script>
+        function move() {
+            left += 10;
+            button.style.left = `${left}px`;
+        }
+
+        let left = 100;
+        const button = document.getElementById('moveButton');
+        button.style.position = 'absolute';
+        button.style.left = `${left}px`;
+
+        button.addEventListener('click', move);
+    </script>
+</body>
+</html>

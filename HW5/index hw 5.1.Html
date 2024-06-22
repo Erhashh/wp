@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 100px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button id="dynamicButton">Click me</button>
+    <script>
+        function big() {
+            width += 10;
+            height += 10;
+            left += 5;
+            top1 += 5;
+            b.style.left = `${left}px`;
+            b.style.top = `${top1}px`;
+            b.style.height = `${height}px`;
+            b.style.width = `${width}px`;
+        }
+
+        let left = 10;
+        let top1 = 10;
+        let height = 50;
+        let width = 100;
+        const b = document.getElementById('dynamicButton');
+        b.style.left = `${left}px`;
+        b.style.top = `${top1}px`;
+        b.style.height = `${height}px`;
+        b.style.width = `${width}px`;
+
+        b.addEventListener('click', big);
+    </script>
+</body>
+</html>
