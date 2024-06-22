@@ -1,0 +1,89 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Header styles */
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Main content styles */
+.main-content {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Select, textarea, button styles */
+select, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #4a90e2;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Textarea specific styles */
+textarea {
+    height: 150px;
+    resize: none; /* Disable textarea resizing */
+}
+
+/* Button styles */
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+/* Translation result styles */
+.translation-result {
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 50px;
+    background-color: #e8f4fd;
+    color: #333;
+    font-size: 16px;
+}
