@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Introduction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        #container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            animation: fadeIn 1s ease-out;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            background-color: #116937;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 12px 12px 0 0;
+            margin: -30px -30px 20px -30px;
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        p, ul {
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out;
+            margin: 10px 0;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        a {
+            color: #0060c6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            color: #116937;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        li span.highlight {
+            color: #116937;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Self Introduction</h1>
+        <p>大家好，我是安吉斯.</p>
+        <p>Hello! My name is <span class="highlight">Raffi Aghist</span>.</p>
+        <p>I am currently pursuing a degree in <span class="highlight">Computer Science</span> at <span class="highlight">National Quemoy University, Taiwan</span>.</p>
+        <p>At <span class="highlight">20 years old</span>, I hail from the beautiful country of <span class="highlight">Indonesia</span>.</p>
+        <p>I am passionate about <span class="highlight">technology</span> and <span class="highlight">innovation</span>. Here are a few of my favorite activities:</p>
+        <ul>
+            <li>Playing <span class="highlight">games</span></li>
+            <li>Playing <span class="highlight">football</span></li>
+            <li>Engaging in <span class="highlight">photography</span></li>
+            <li>Creating <span class="highlight">graphic designs</span></li>
+        </ul>
+        <p>If you want to see some of my projects, feel free to visit my <a href="https://github.com/Erhashh/Hasashi.git" target="_blank">Github profile</a>.</p>
+        <p>Thank you for taking the time to read my introduction. I look forward to connecting with you!</p>
+    </div>
+</body>
+</html>
